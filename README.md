@@ -13,7 +13,7 @@ Moreover, different organizations tipically take care of different parts of the 
 ##### Data Understanding
 Data is based on real messages sent during disaster events. Each message is categorized into 36 categories, most of them binary with the exception of multiclass 'related' category.
 
-![trainingdata](/pics/TrainingDataOverview_01.jpg?raw=true)
+![trainingdata](/pics/TrainingDataOverview01.jpg?raw=true)
 
 ##### Data Preparation: ETL Pipeline
 Built a data cleaning pipeline, process_data.py, that loads the messages and categories datasets, merges the two datasets, cleans the data and stores it in a SQLite database.
