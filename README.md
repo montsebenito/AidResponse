@@ -1,6 +1,6 @@
 # Disaster Response Pipeline Project
 
-![homepage](https://github.com/montsebenito/DisasterResponseProject/pics/homepage_top.jpg?raw=true)
+![homepage](/pics/homepage_top.jpg?raw=true)
 
 ### Project Overview:
 
@@ -13,7 +13,7 @@ Moreover, different organizations tipically take care of different parts of the 
 ##### Data Understanding
 Data is based on real messages sent during disaster events. Each message is categorized into 36 categories, most of them binary with the exception of multiclass 'related' category.
 
-![trainingdata](https://github.com/montsebenito/DisasterResponseProject/pics/TrainingDataOverview_01.jpg?raw=true)
+![trainingdata](/pics/TrainingDataOverview_01.jpg?raw=true)
 
 ##### Data Preparation: ETL Pipeline
 Built a data cleaning pipeline, process_data.py, that loads the messages and categories datasets, merges the two datasets, cleans the data and stores it in a SQLite database.
@@ -23,7 +23,7 @@ Built a ML pipeline, train_classifier.py, that loads data from the SQLite databa
 
 ##### Results Evaluation: Flask Web App
 Created Web app using Flask, html, css and Javascript, where an emergency worker can input a new message and get classification results in several categories and also displays visualizations of the data using Potly. 
-![classifier](https://github.com/montsebenito/DisasterResponseProject/pics/Classifier01.jpg?raw=true)
+![classifier](/pics/Classifier01.jpg?raw=true)
 
 ### Next Steps:
 - Use an API to directly read the messages from social media.
