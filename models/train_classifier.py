@@ -82,12 +82,9 @@ def build_model():
         ('clf', MultiOutputClassifier(RandomForestClassifier()))])
     
     parameters = {
-        'tfidf__use_idf': (True, False),
-        'tfidf__smooth_idf': [True, False],
         'vect__max_df': (0.5, 0.75, 1.0),
-        'vect__max_features': (None, 5000, 10000),
-        'clf__estimator__n_estimators': [50, 100],
-        'clf__estimator__min_samples_split': [2, 4]
+        'vect__max_features': (None, 5000),
+        'clf__estimator__n_estimators': [50, 100]
     }
     cv = GridSearchCV(pipeline, param_grid=parameters, n_jobs=-1, verbose=2, cv=2)
     
